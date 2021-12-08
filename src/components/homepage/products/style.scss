@@ -1,0 +1,24 @@
+.products-container {
+    position: relative;
+    margin: calc((100px/1513px) * 100vh) calc((100px/1440px) * 100vw);
+    
+    background-color: #ffff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(infinite, calc((444px/1513px) * 100vh));
+    gap: calc((103px/1513px) * 100vh) calc((40px/1440px * 100vw));
+}
+
+@media only screen and (max-width: 768px){
+    .products-container {
+        position: relative;
+        justify-items: center;
+        background-color: #ffff;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(infinite, calc((444px/1513px) * 100vh));
+        gap: calc((103px/1513px) * 100vh) calc((40px/1440px * 100vw));
+    }
+}
+
+

@@ -1,0 +1,194 @@
+.left-part-item {
+  position: relative;
+  width: 46.4163822526%;
+  height: 100%;
+  margin: 0;
+  margin-right: 5.5384615385%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.left-part-item::-webkit-scrollbar {
+  display: none;
+}
+.left-part-item .left-part-text {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.left-part-item .left-part-text .item-title {
+  padding: 0;
+  margin: 0;
+  word-wrap: break-word;
+  margin-bottom: 5px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  color: #1D1F22;
+  height: 52px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+.left-part-item .left-part-text .item-title::-webkit-scrollbar {
+  display: none;
+}
+.left-part-item .left-part-text .item-price {
+  padding: 0;
+  margin: 0;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 160%;
+  color: #1D1F22;
+}
+.left-part-item .item-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+.left-part-item .plus-minus {
+  border: 1px solid #1D1F22;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.left-part-item .plus-minus:hover {
+  transition: all 0.2s ease-out;
+  background-color: #EBE9E9;
+}
+.left-part-item .variation {
+  border: 1px solid #1D1F22;
+  box-sizing: content-box;
+  min-width: 24px;
+  min-height: 24px;
+  display: flex;
+  padding: 0 0.1em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.left-part-item .variation:hover {
+  transition: all 0.2s ease-out;
+  background-color: #EBE9E9;
+}
+.left-part-item .variation div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+}
+.left-part-item .selected-variation {
+  background: rgba(166, 166, 166, 0.2);
+  color: #A6A6A6;
+  border: 1px solid #A6A6A6;
+}
+.left-part-item .color-cart-menu {
+  border: 1px solid #1D1F22;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 28.4px;
+  height: 100%;
+  border: none;
+  filter: drop-shadow(0px 2px 5px rgba(168, 172, 176, 0.3));
+}
+.left-part-item .color-cart-menu:hover {
+  transition: all 0.3s ease-in;
+  border-radius: 50%;
+}
+.left-part-item .color-cart-menu:hover .content-color {
+  transition: all 0.2s ease-in-out;
+  display: block;
+  animation: open-menu 0.25s forwards;
+}
+.left-part-item .color-cart-menu .content-color {
+  position: absolute;
+  width: 115.2px;
+  height: calc(100% + 86.8px);
+  left: -43.4px;
+  top: -43.4px;
+  z-index: 2;
+  display: none;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.left-part-item .color-cart-menu .content-color .vertical-colors {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: calc(50% - 14.2px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 28.4px;
+}
+.left-part-item .color-cart-menu .content-color .vertical-colors .color-option-select {
+  padding: 5px 0;
+}
+.left-part-item .color-cart-menu .content-color .horizontal-colors {
+  position: absolute;
+  z-index: 2;
+  top: calc(50% - 14.2px);
+  height: 28.4px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-part-item .color-cart-menu .content-color .horizontal-colors .color-option-select {
+  padding: 0 5px;
+}
+.left-part-item .color-cart-menu .content-color .color-option-select {
+  width: 28.4px;
+  height: 28.4px;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 3;
+  box-shadow: inset 0px 0px 3.5px rgba(168, 172, 176, 0.65);
+  transition: all 0.23s ease-out;
+}
+.left-part-item .color-cart-menu .content-color .color-option-select:hover {
+  transition: all 0.23s ease-out;
+  width: 30.4px;
+  height: 30.4px;
+}
+
+@keyframes open-menu {
+  0% {
+    transform: rotateZ(90deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 20%;
+  }
+  100% {
+    transform: rotateZ(0deg);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

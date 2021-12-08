@@ -1,0 +1,82 @@
+$figma:  1440;
+
+.none-cart { 
+    display: none;
+    opacity: 0;
+}
+
+.cart-menu {
+    position: fixed;
+    width: 325px;
+    max-height: 80vh;
+    right: calc((87/$figma) * 100%);
+    top: 78px;
+    background-color: #ffff;
+    z-index: 10;
+    display: block;
+    opacity: 1;
+    transition: all .5s ease-out;
+    display: flex;
+    flex-direction: column;
+    padding:0;
+    margin: 0;
+    box-sizing: content-box;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.cart-title {
+    padding-top: 0;
+    margin: 0;
+    margin-bottom: 23px;
+    position: relative;
+    top: 8px;
+    left: calc((16px/325px) * 100%);
+    
+    color:  #1D1F22;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 160%;
+
+    span {
+        font-weight: 500;
+    }
+}
+
+.cart-item {
+    $width: calc(100% - 32px);
+    width: $width;
+    position: relative;
+    height: 137px;
+    margin: 0 16px 41px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.right-part-item {
+    $width: calc((105/293) * 100%);
+    position: relative;
+    width: $width;
+    height: 137px;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    overflow: hidden;
+    
+    img {
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+}
+

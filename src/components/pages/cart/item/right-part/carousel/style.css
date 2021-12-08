@@ -1,0 +1,56 @@
+.carousel {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.carousel .right, .carousel .left {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  filter: brightness(1);
+  transition: all 0.2s ease-in-out;
+}
+.carousel .arrow-button-right, .carousel .arrow-button-left {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.carousel .arrow-button-right:hover .right, .carousel .arrow-button-right:hover .left, .carousel .arrow-button-left:hover .right, .carousel .arrow-button-left:hover .left {
+  filter: brightness(0);
+  transition: all 0.2s ease-in-out;
+}
+.carousel .arrow-button-right {
+  right: 0;
+}
+.carousel .arrow-button-left {
+  left: 0;
+}
+.carousel .carousel-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 201px;
+  z-index: 0;
+}
+.carousel .image-carousel {
+  display: none;
+  height: 186px;
+  opacity: 0;
+}
+.carousel .active-image {
+  display: block;
+  opacity: 1;
+}
+.carousel .hidden {
+  display: none;
+  opacity: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

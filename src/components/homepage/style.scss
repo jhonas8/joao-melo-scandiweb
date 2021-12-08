@@ -1,0 +1,37 @@
+$figma_width: 1440px;
+$figma_height: 1513px;
+
+.container {
+    width: 100%;
+    height: calc(100% - 80px);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 0;
+}
+
+.overlay {
+    transition: all .5s ease-in-out;
+    width: 100%;
+    height: calc(100% - 80px);
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 1;
+    background-color: #39374838;
+}
+
+.title-page {
+    position: relative;
+    width: 299px;
+    height: 68px;
+    margin: calc((80px/$figma_height)*100vh) 0px 0px calc((101px/$figma_width)*100vw);
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 160%;
+    color: #1D1F22;
+
+}

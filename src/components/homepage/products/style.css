@@ -1,0 +1,23 @@
+.products-container {
+  position: relative;
+  margin: 6.6093853272vh 6.9444444444vw;
+  background-color: #ffff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(infinite, 29.3456708526vh);
+  gap: 6.807666887vh 2.7777777778vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .products-container {
+    position: relative;
+    justify-items: center;
+    background-color: #ffff;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(infinite, 29.3456708526vh);
+    gap: 6.807666887vh 2.7777777778vw;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,76 @@
+.none-cart {
+  display: none;
+  opacity: 0;
+}
+
+.cart-menu {
+  position: fixed;
+  width: 325px;
+  max-height: 80vh;
+  right: 6.0416666667%;
+  top: 78px;
+  background-color: #ffff;
+  z-index: 10;
+  display: block;
+  opacity: 1;
+  transition: all 0.5s ease-out;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+.cart-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.cart-title {
+  padding-top: 0;
+  margin: 0;
+  margin-bottom: 23px;
+  position: relative;
+  top: 8px;
+  left: 4.9230769231%;
+  color: #1D1F22;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 160%;
+}
+.cart-title span {
+  font-weight: 500;
+}
+
+.cart-item {
+  width: calc(100% - 32px);
+  position: relative;
+  height: 137px;
+  margin: 0 16px 41px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.right-part-item {
+  position: relative;
+  width: 35.8361774744%;
+  height: 137px;
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  overflow: hidden;
+}
+.right-part-item img {
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

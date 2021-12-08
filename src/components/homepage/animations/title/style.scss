@@ -1,0 +1,16 @@
+.animated-container-text {
+    display: flex;
+    flex-direction: row;
+
+    span {
+        position: relative;
+        opacity: 0;
+    }
+
+}
+
+@keyframes move-text {
+    0% { top: -0.2em; opacity: 1; }
+    50% { top: 0.2em; }
+    100% { top: 0; opacity: 1; }
+}

@@ -1,0 +1,95 @@
+.menu-cart-footer {
+    margin: 0 16px 35px 16px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+
+    .total {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 160%;
+        text-align: left;
+    }
+
+    .total-number {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 160%;
+        text-align: right;
+    }
+}
+
+.bottom-buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 0 16px 20px 16px; 
+    justify-content: space-between;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none;
+
+    
+    .view-bag {
+        padding: 16px 32px;
+        margin-right: 12px;
+        background: #FFFFFF;
+        border: 1px solid #1D1F22;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 120%;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #1D1F22;
+        cursor: pointer;
+
+        transition: all .2s ease-out;
+        &:hover {
+            transition: all .2s ease-out;
+            background-color: #EBE9E9;
+        }
+    }
+
+    .checkout-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 32px;
+        background-color: #5ECE7B;
+
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 120%;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+        cursor: pointer;
+
+        transition: all .2s ease-out;
+        &:hover {
+            transition: all .2s ease-out;
+            background-color: #53B56C;
+        }
+        
+    }
+}
+.footer-none-decoration {
+    text-decoration: none;
+}
