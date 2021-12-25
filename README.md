@@ -1,3 +1,6 @@
+# Webshop made with React
+ This project is a complete webshop (with no selling fuctionalities) made using React. Once the backend is provided by a private compoany (which I'm applying to), I'll post a video showing the final result.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
